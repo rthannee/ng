@@ -1,0 +1,79 @@
+<html>
+<head>
+ <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lalezar|Sacramento" rel="stylesheet">
+    <link href="bootstrap/css/namitha.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="bootstrap/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script>
+    $(document).ready(function(){
+	var heights=jQuery(window).height();
+	var margTop=(heights/2)-25;
+
+	var h=50;//height and width of the loading circles
+	var w=50;
+	$("#logo").hide();
+	$("#loader").css("width","100%");	
+	$("#loader").css("height",heights);
+	$("#loader").css("background-color","white");
+	
+	$("body").css("overflow","hidden");
+	
+	$("#back").css("width","100%");
+	$("#back").css("height",heights);
+	$("#back").css("z-index",'200001');
+	$("#back").css("padding","0");
+	$("#back").css("margin","0");
+	$("#back").css("margin-top","0px");
+	$("#back").css("opacity","1.0");
+	$("#back").css("position","fixed");
+
+	//$("#back").css("background-image","url(tracks.jpg)");//You can change the background image to whatever you like... Low image sizes would be the best
+
+
+	$("#back").css("background-size","100% 100%");
+	$("#back").append("<div id='box' align='center' style='background-color:#00000; width:220px; height:52px;'></div>");
+	
+	$("#box").center();
+});
+    </script> </head>
+<body>
+<div id="loader">
+	<div id="back">
+		<div id="box" align="center" >
+		<table>
+		<tr>
+		<td width="30%" align="center">
+		<div>
+		 <img class="imglogo" src="img/logo_15.png" alt="Logo">
+		 <img class="line" src="img/line.png" alt="Line">
+		 </div>
+		</td>
+		<td width="70%">
+			<table>
+				<tr height="80%">
+						<td >
+								<div style="position:relative;">
+								<ul id="caphead" class="anim-caphead" style="margin-left:10px">
+<li>N</li> <li>A</li> <li>M</li> <li>I</li> <li>T</li> <li>H</li><li>A</li> <li>&nbsp;</li> <li>G</li>
+<li>R</li> <li>O</li> <li>U</li> <li>P</li>
+								               </ul>
+								               </div>
+						</td>
+						</tr>
+				<tr height="20%">
+
+						<td align="top">
+
+								               <div class="anim-caption-tail" style="position:relative;margin-top:-30px;margin-left:60px;">Involve  .  Resolve  .  Evolve</div>
+						</td>
+				</tr>
+			</table>
+		</td>
+		</tr>
+		</table>
+		   
+		</div>
+	</div>
+</div>
+</body>
+</html>
